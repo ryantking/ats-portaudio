@@ -6,7 +6,7 @@
 (* ****** ****** *)
 
 %{#
-#include "./portaudio.cats"
+#include "atscntrb-rk-libportaudio/portaudio.cats"
 %}
 
 #define ATS_PACKNAME "ATSCNTRB.PA"
