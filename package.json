@@ -1,0 +1,22 @@
+{
+    "name": "atscntrb-rk-libportaudio",
+    "version": "1.0.0",
+    "description": "This package is for calling PortAudio functions directly in ATS",
+    "main": "N/A",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/RyanTKing/ats-PortAudio.git"
+    },
+    "keywords": [
+        "ATS",
+        "PortAudio",
+        "atscntrb-rk-libportaudio"
+    ],
+    "author": "Ryan King <hello@ryanking.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/RyanTKing/ats-PortAudio/issues"
+    },
+    "homepage": "https://github.com/RyanTKing/ats-PortAudio#readme"
+}
