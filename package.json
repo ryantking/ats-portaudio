@@ -6,7 +6,7 @@
     "scripts": {},
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/RyanTKing/ats-PortAudio.git"
+        "url": "git+https://github.com/RyanTKing/ats-portaudio.git"
     },
     "keywords": [
         "ATS",
@@ -16,7 +16,7 @@
     "author": "Ryan King <hello@ryanking.com>",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/RyanTKing/ats-PortAudio/issues"
+        "url": "https://github.com/RyanTKing/ats-portaudio/issues"
     },
-    "homepage": "https://github.com/RyanTKing/ats-PortAudio#readme"
+    "homepage": "https://github.com/RyanTKing/ats-portaudio#readme"
 }
