@@ -19,7 +19,7 @@ typedef PaDeviceIndex = int
 typedef PaHostApiIndex = int
 typedef PaTime = double
 typedef PaSampleFormat = ulint
-typedef PaStream = ptr
+abst@ype PaStream = ptr
 typedef PaStreamFlags = ulint
 typedef PaStreamCallbackFlags = ulint
 
@@ -90,8 +90,7 @@ typedef PaStreamInfo = $extype_struct"PaStreamInfo" of {
 (* ****** ****** *)
 
 typedef PaStreamCallback =
-  (PaStream, PaStream, ulint, PaStreamCallbackTimeInfo,
-  PaStreamCallbackFlags, ptr) -> int
+  (ptr, ptr, ulint, ptr, PaStreamCallbackFlags, ptr) -> int
 
 typedef PaStreamFinishedCallback = (ptr) -> void
 
@@ -143,11 +142,11 @@ fun Pa_IsFormatSupported(
   PaStreamParameters, PaStreamParameters, double
 ): PaError = "mac#%"
 fun Pa_OpenStream(
-  PaStream, PaStreamParameters, PaStreamParameters, double,
+  &PaStream? >> _, PaStreamParameters, PaStreamParameters, double,
   ulint, PaStreamFlags, PaStreamCallback, ptr
 ): PaError = "mac#%"
 fun Pa_OpenDefaultStream(
-  PaStream, int, int, PaSampleFormat, double,
+  &PaStream? >> _, int, int, PaSampleFormat, double,
   ulint, PaStreamCallback, ptr
 ): PaError = "mac#%"
 fun Pa_CloseStream(PaStream): PaError = "mac#%"
